@@ -71,6 +71,20 @@ footer {
   font-weight: 500;
 }
 
+#about h1 {
+  position: relative;
+  top: 13%;
+}
+
+#about .btn{
+  background-color: #F3D250;
+  font-weight: bold;
+}
+
+#about .btn:hover {
+  background-color: #F78888;
+}
+
 #work {
   min-height: 50%;
   background-color: #ECECEC;
