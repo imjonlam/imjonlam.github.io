@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500,700" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/b334616268.js" crossorigin="anonymous"></script>
+  <link href="css/master.css" rel="stylesheet">
+  
+  <script>
+    $('.nav-link, .navbar-brand').click(function() {
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(sectionTo).offset().top
+    }, 1500);
+    });
+  </script>
+  
+  <title>Jonathan Lam</title>
+</head>
+
+<body>
+  <nav id=navbar class="navbar navbar-expand-lg navbar-light justify-content-center">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">JL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse justify-content-between align-items-center w-100" id="navbarSupportedContent">
+        <ul class="nav navbar-nav mx-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#work">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#interests">Interests</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="home" class="container-fluid text-center p-5">
+    <div class="vertically-center">
+      <h1 class="display-1 pt-2">Jonathan Lam</h1>
+      <h4 class="mt-2">Back-End Developer</h4>
+      <div class="mt-5">
+        <a href="https://www.linkedin.com/in/jonathanlam1994/" alt="https://www.linkedin.com/in/jonathanlam1994"><i class="fab fa-3x fa-linkedin"></i></a>
+        &nbsp;
+        <a href="https://github.com/teabubblez/" alt="https://github.com/teabubblez"><i class="fab fa-3x fa-github-alt"></i></a>
+        &nbsp;
+        <a href="https://www.facebook.com/teabubblez/" alt="https://www.facebook.com/teabubblez"><i class="fab fa-3x fa-facebook"></i></a>
+        <br><br><br>
+        <a href="mailto:jonathanlam.1994@gmail.com" class="btn btn-lg mb-5">Email Me!</a>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="about" class="container-fluid text-center p-5">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="mt-2 display-3">HI.</h1>
+        </div>
+        <div class="col-md-5">
+          <h2 class="pb-2 title">About Me</h2>
+          <p>I'm Jonathan!
+            I recently graduated from Ryerson University with a BSc. in Computer Science and am now working part-time as an Ice Web Applications Developer at Environment Canada.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="work" class="container-fluid p-5">
+    <div class="container">
+      <h1 class="title pb-3 text-center">Work Experience</h1>
+      <div class="row d-flex justify-content-center">
+         <div class="card mb-3 shadow border-0" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4 mt-1 text-center">
+                <img src="img/ecc.png" alt="environment canada" width="180">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Environment Canada</h5>
+                  <h6 class="card-title">Ice Web Applications Developer</h6>
+                  <p class="card-text"><small class="text-muted">Sept 2019 - Present</small></p>
+                  <ul class="card-text">
+                    <li>Created a universal SIGRID‐3 compliant datasource used to derive all ECC products</li>
+                    <li>Constructed a .NET Class that makes POST requests with GitLab API for critical issue creation and tracking.</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center">
+         <div class="card mb-3 shadow border-0" style="max-width: 600px;">
+            <div class="row g-0">
+              <div class="col-md-4 text-center">
+                <img src="img/rbc.png" alt="rbc" width="175" height="200" >
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Royal Bank of Canada</h5>
+                  <h6 class="card-title">ServiceNow Developer / QA Analyst Intern</h6>
+                  <p class="card-text"><small class="text-muted">Apr 2018 - Dec 2018</small></p>
+                  <ul class="card-text">
+                    <li>Developed front‐end forms in JavaScript for RBC MyMarketPlace</li>
+                    <li>Wrote over 258 automated unit tests with Selenium WebDriver</li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="projects" class="container-fluid p-5">
+    <h1 class="display-4 title pt-3 text-center">Projects</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-lg-8 mb-3 text-center">
+                <img src="img/atlas_sample.gif" alt="sample atlas" class="rounded" width="75%"">
+              </div>
+              <div class="col-lg-4">
+                <h2><i>30-Year Ice Atlas Revision</i></h2>
+                <p>The 30-Year Ice Atlas represents the changes in Ice in the Canadian Waters over a 30-Year Period with respect to its median concentration, predominant type, frequency of presence and more. Every decade, the images are recreated with updated data.</p>
+                <p>
+                  For this year's Atlas, the goal of this project was to not only create new charts with updated data but to also re-implement it from bottom-up using more modern open source tools like QGIS and Python libraries like OSGEO.
+                </p>
+                <p>
+                  For example, a Median Concentration of Ice image is generated by first analyzing all ingested data from the past 30 years, computing the median concentration by Polygon intersections and further creating the final image.
+                </p>
+                <div class="text-center mt-5">
+                  <a class="btn btn-lg" href="https://iceweb-stage.cmc.ec.gc.ca/30Atlas/page1.xhtml" target="_blank">To View More Charts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="carousel-item">
+          <div class="container p-5">
+            <div class="row">
+              <div class="col-lg-6 mb-3 text-center">
+                <img src="img/ezplanner.png" alt="ezplanner" class="rounded" width="75%"">
+              </div>
+              <div class="col-lg-6">
+                <h2><i>EZPlanner</i></h2>
+                <h6>An Introduction to Web Development</h6>
+                <p>Developed a simple Bootstrap web application that allows users to form groups and plan an imaginary vacation together. Data
+is served using jQuery Ajax POST requests with PHP from MYSQL.</p>
+                <div class="text-center mt-3">
+                  <a class="btn btn-lg" href="http://webdev.cs.ryerson.ca/~j229lam/EZPlanner/" target="_blank">Have a Look!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+  </div>
+  
+  <div id="contact" class="container-fluid text-center p-5">
+    <h1 class="title">Contact Me</h1>
+    <h6 class="mb-5">Looking to Hire? General Inquires? Please feel free to send me an email!</h6>
+    <a href="mailto:jonathanlam.1994@gmail.com" class="btn btn-lg m-3">Email Me!</a>
+  </div>
+
+  <footer class="text-center">
+    <p>Jonathan Lam | jonathanlam.1994@gmail.com</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
