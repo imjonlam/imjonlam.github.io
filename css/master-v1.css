@@ -1,0 +1,160 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  height: 100%
+}
+
+body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 300;
+ background-color: #FFFFFF;
+
+ -ms-overflow-style: none;
+ scrollbar-width: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2D3436;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+footer {
+  background-color: #2D3436;
+  color: #DCDDE1;
+  opacity: 0.5;
+}
+
+.vertically-center {
+  position: relative;
+  top: 6vh;
+}
+
+.title {
+  color: #2D3436;
+  font-weight: bold;
+}
+
+#navbar {
+  background-color: #ECECEC;
+  font-size: large;
+  font-weight: 600;
+}
+
+#home {
+  background-color: #F3D250;
+  min-height: 50%;
+}
+
+#home .btn{
+  background-color: #5DA2D5;
+  font-weight: bold;
+}
+
+#home .btn:hover {
+  background-color: #90CCF4;
+}
+
+#about {
+  background-color: #90CCF4;
+  min-height: 20%;
+}
+
+#about p {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+#work {
+  min-height: 50%;
+  background-color: #ECECEC;
+}
+
+#work h5 {
+  font-weight: bold;
+}
+
+#work li {
+  font-weight: 300;
+}
+
+#work p.card-text {
+  position: relative;
+  margin-top: -0.5em;
+  margin-bottom: 0em;
+}
+
+#projects {
+  background-color: #F78888;
+  color: #FFFFFF;
+  min-height: 50%;
+}
+
+#projects p {
+  text-indent: 1em;
+  font-weight: 300;
+}
+
+#projects .btn{
+  background-color: #5DA2D5;
+  color: #FFFFFF;
+}
+
+#projects .btn:hover {
+  background-color: #90CCF4;
+}
+
+#contact {
+  background-color: #ECECEC;
+  min-height: 40%;
+}
+
+#contact .btn{
+  background-color: #5DA2D5;
+  font-weight: bold;
+}
+
+#contact .btn:hover {
+  background-color: #90CCF4;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  position: relative;
+  right: -50px;
+  font-size: 80px;
+  color: #FFFFFF;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  position: relative;
+  left: -50px;
+  font-size: 80px;
+  color: #FFFFFF;
+}
+
+.carousel-indicators :not(.active){
+    background-color: #FFFFFF;
+    height: 6px;
+    width: 50px;
+}
+.carousel-indicators .active{
+    background-color: #F00;
+    height: 6px;
+    width: 50px;
+}
